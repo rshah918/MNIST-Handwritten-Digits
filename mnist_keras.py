@@ -38,5 +38,5 @@ model.add(Dense(128,activation=tf.nn.softmax))
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
-model.fit(x=x_train[:1000],y=y_train[:1000], epochs=7)
+model.fit(x=x_train[:1000],y=y_train[:1000], epochs=10)
 model.evaluate(x_test[:1000], y_test[:1000])
